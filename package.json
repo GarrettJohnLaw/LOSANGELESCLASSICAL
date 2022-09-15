@@ -1,7 +1,7 @@
 {
   "name": "los-angeles-classical",
   "private": true,
-  "homepage": "https://github.com/GarrettJohnLaw/LOSANGELESCLASSICAL",
+  "homepage": "https://GarrettJohnLaw.github.io/LOSANGELESCLASSICAL",
   "version": "0.0.1",
   "scripts": {
     "predeploy": "npm run build",
