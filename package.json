@@ -1,6 +1,11 @@
 {
+  "name": "los-angeles-classical",
   "private": true,
+  "homepage": "https://GarrettJohnLaw.github.io/LOSANGELESCLASSICAL",
+  "version": "0.0.1",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -14,5 +19,8 @@
     "react": "17.0.2",
     "react-bootstrap": "^2.5.0",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

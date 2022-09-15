@@ -4,7 +4,7 @@ export default function Layout({ children }) {
   return (
     <>
       <NavBar></NavBar>
-      <title>Layouts Example</title>
+      <title>Los Angeles Classical</title>
 
       <main>{children}</main>
     </>
