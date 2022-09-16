@@ -6,7 +6,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import moment from "moment-timezone";
 import Button from "react-bootstrap/Button";
-import Router from "next/router";
 
 export default function NavBar() {
   const { data: session, status } = useSession();

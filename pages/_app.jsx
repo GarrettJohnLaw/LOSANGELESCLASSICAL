@@ -10,7 +10,7 @@ export default function App({
   return (
     <SSRProvider>
       <SessionProvider session={session}>
-        <Layout>
+        <Layout className="flex-grow-1">
           <Component {...pageProps} />
         </Layout>
       </SessionProvider>

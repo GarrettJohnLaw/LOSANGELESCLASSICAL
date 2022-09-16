@@ -1,5 +1,5 @@
 const nextConfig = {
-    distDir: "build",
-  };
-  
-  module.exports = nextConfig;
+  distDir: "/opt/build/repo/.next",
+};
+
+module.exports = nextConfig;
