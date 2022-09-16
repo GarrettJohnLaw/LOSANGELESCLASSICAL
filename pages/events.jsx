@@ -1,14 +1,8 @@
-import EventCard from "../components/events/EventCard";
+import { Container } from "react-bootstrap";
 
-export default function Event(props) {
-  let events = [];
-  props.events.map((event, index) => {
-    const eventCard = <EventCard event={event} key={index}></EventCard>;
-    events.push(eventCard);
-  });
-
+export default function Events() {
   return (
-    <>
+    <Container fluid>
       <head>
         <title>Events</title>
       </head>
@@ -22,16 +16,6 @@ export default function Event(props) {
         data-tockify-script="embed"
         src="https://public.tockify.com/browser/embed.js"
       ></script>
-    </>
+    </Container>
   );
-}
-
-export async function getServerSideProps(context) {
-  const event = {
-    Name: "Event Name",
-    Description: "Description",
-  };
-  return {
-    props: { events: [event] }, // will be passed to the page component as props
-  };
 }
