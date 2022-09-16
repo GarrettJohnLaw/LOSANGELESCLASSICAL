@@ -8,14 +8,14 @@ import moment from "moment-timezone";
 import Button from "react-bootstrap/Button";
 
 export default function NavBar() {
-  // const { data: session, status } = useSession();
-  // if (status === "unauthenticated") {
-  //   signIn();
-  // }
-  const session = {
-    user: { name: "Garrett Law" },
-  };
-  const status = "authenticated";
+  const { data: session, status } = useSession();
+  if (status === "unauthenticated") {
+    signIn();
+  }
+  // const session = {
+  //   user: { name: "Anonymous User" },
+  // };
+  // const status = "authenticated";
   const name = session?.user?.name;
   const firstName = name?.split(" ")[0];
   var time = moment().hours();
