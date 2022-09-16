@@ -4,7 +4,12 @@ module.exports = {
       {
         source: "/",
         destination: "/events",
-        permanent: true,
+        permanent: false,
+      },
+      {
+        source: "",
+        destination: "/events",
+        permanent: false,
       },
     ];
   },
