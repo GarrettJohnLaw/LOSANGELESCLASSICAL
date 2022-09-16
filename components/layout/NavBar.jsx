@@ -16,10 +16,10 @@ export default function NavBar() {
   //   user: { name: "Anonymous User" },
   // };
   // const status = "authenticated";
-  const name = session?.user?.name;
+  const name = session?.user?.name || "Friend";
   const firstName = name?.split(" ")[0];
   var time = moment().hours();
-  let greeting;
+  let greeting = `Hi there, ${firstName}!`;
   if (time < 12) {
     greeting = `Good morning, ${firstName}`;
   } else if (time < 17) {
@@ -59,14 +59,18 @@ export default function NavBar() {
           width="2"
           className="d-flex justify-content-end align-items-center"
         >
-          <p className="text-white align-self-center my-0 mx-2">{greeting}</p>
           {status === "unauthenticated" && (
             <Button variant="primary">Login</Button>
           )}
           {status === "authenticated" && (
-            <Button variant="secondary" size="sm" onClick={() => signOut()}>
-              Logout
-            </Button>
+            <>
+              <p className="text-white align-self-center my-0 mx-2">
+                {greeting}
+              </p>
+              <Button variant="secondary" size="sm" onClick={() => signOut()}>
+                Logout
+              </Button>
+            </>
           )}
         </Col>
       </Container>
