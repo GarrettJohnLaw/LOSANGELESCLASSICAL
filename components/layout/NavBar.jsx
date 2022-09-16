@@ -31,11 +31,13 @@ export default function NavBar() {
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
         <Col>
-          <Navbar.Brand href="/">Los Angeles Classical</Navbar.Brand>
+          <Navbar.Brand href="/">
+            Los Angeles Classical - Your Source For Classical Music In LA
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Jobs</Nav.Link>
+              <Nav.Link href="/jobs">Jobs</Nav.Link>
               <Nav.Link href="/events">Events</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
