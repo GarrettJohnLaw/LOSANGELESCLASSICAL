@@ -8,12 +8,24 @@ export default function App({
   pageProps: { session, ...pageProps },
 }) {
   return (
-    <SSRProvider>
-      <SessionProvider session={session}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </SessionProvider>
-    </SSRProvider>
+    <>
+      {/* Google tag (gtag.js) */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-J8Z3RTC2PZ"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'G-J8Z3RTC2PZ');
+      </script>
+      <SSRProvider>
+        <SessionProvider session={session}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </SessionProvider>
+      </SSRProvider>
+    </>
   );
 }
