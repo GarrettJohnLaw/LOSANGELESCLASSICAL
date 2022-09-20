@@ -4,7 +4,9 @@ export default function Events() {
   return (
     <Container fluid>
       <head>
-        <title>Events</title>
+        <title>Los Angeles Classical</title>
+        <meta name="description" content="Your source for classical concerts and events in Los Angeles. "></meta>
+        <meta name="robots" content="index, follow" />
       </head>
 
       <div
