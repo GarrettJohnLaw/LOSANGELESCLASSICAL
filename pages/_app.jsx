@@ -9,7 +9,7 @@ export default function App({
 }) {
   return (
     <>
-      {/* Google tag (gtag.js) */}
+      {/* Google tag (gtag.js)
       <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-J8Z3RTC2PZ"
@@ -18,7 +18,7 @@ export default function App({
         window.dataLayer = window.dataLayer || []; function gtag()
         {dataLayer.push(arguments)}
         gtag('js', new Date()); gtag('config', 'G-J8Z3RTC2PZ');
-      </script>
+      </script> */}
       <SSRProvider>
         <SessionProvider session={session}>
           <Layout>
